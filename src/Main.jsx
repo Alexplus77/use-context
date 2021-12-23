@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import {ContextTheme} from "./ContextTheme";
 
 function Main() {
-  const [theme, handleToggleTheme]=useContext(ContextTheme)
+  const [theme]=useContext(ContextTheme)
   return (
     <main className={theme==='light' ?"light-theme":'dark-theme'}>
       <h2>Main Content</h2>

@@ -16,12 +16,10 @@ const handleToggleTheme=()=>theme === 'light'? setTheme('dark') : setTheme('ligh
     <>
     <ContextTheme.Provider value={[theme, handleToggleTheme]}>
       <div className="content">
-
         <Header />
         <Button />
         <Main />
         <Promo />
-
       </div>
       <Footer />
     </ContextTheme.Provider>
