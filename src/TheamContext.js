@@ -5,9 +5,9 @@ const ThemeContext=()=>{
 
     const handleToggleTheme=()=>theme === 'light'? setTheme('dark') : setTheme('light')
     return (
-        <ContextTheme.Provaider value={[theme, handleToggleTheme]}>
+        <ContextTheme.Provider value={[theme, handleToggleTheme]}>
             {props.children}
-        </ContextTheme.Provaider>
+        </ContextTheme.Provider>
     )
 }
 export default ThemeContext
