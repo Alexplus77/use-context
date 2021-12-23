@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
+import {ContextTeam} from "./ContextTeam";
 
 function Main() {
+  const [team, handleToggleTeam]=useContext(ContextTeam)
   return (
-    <main className="light-theme">
+    <main className={team==='light' ?"light-theme":'dark-theme'}>
       <h2>Main Content</h2>
       <div>
         Далеко-далеко за словесными горами в стране, гласных и согласных живут
