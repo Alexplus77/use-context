@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 const ContextTheme = React.createContext('light');
-const ThemeContext=()=>{
+const ThemeContext=(props)=>{
     const [theme, setTheme]=useState('light')
     const handleToggleTheme=()=>theme === 'light'? setTheme('dark') : setTheme('light')
     return (
@@ -9,5 +9,5 @@ const ThemeContext=()=>{
         </ContextTheme.Provider>
     )
 }
-export  {ThemeContext, ContextTheme}
+export {ThemeContext, ContextTheme}
 

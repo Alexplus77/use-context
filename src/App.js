@@ -8,7 +8,6 @@ import Promo from "./Promo";
 
 function App() {
   return (
-
     <>
       <div className="content">
         <Header />
@@ -18,8 +17,6 @@ function App() {
       </div>
       <Footer />
 </>
-
-
 );
 }
 
