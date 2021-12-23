@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import {ContextTheme} from "./ContextTheme";
+import React from "react";
 
 import Header from "./Header";
 import Button from "./Button";
@@ -8,13 +7,9 @@ import Main from "./Main";
 import Promo from "./Promo";
 
 function App() {
-    const [theme, setTheme]=useState('light')
-const handleToggleTheme=()=>theme === 'light'? setTheme('dark') : setTheme('light')
-
   return (
 
     <>
-    <ContextTheme.Provider value={[theme, handleToggleTheme]}>
       <div className="content">
         <Header />
         <Button />
@@ -22,7 +17,6 @@ const handleToggleTheme=()=>theme === 'light'? setTheme('dark') : setTheme('ligh
         <Promo />
       </div>
       <Footer />
-    </ContextTheme.Provider>
 </>
 
 

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import {ContextTheme} from "./ContextTheme";
+import ThemeContext from "./TheamContext";
 
 function Button() {
-const [theme, handleToggleTheme]=useContext(ContextTheme)
+const [theme, handleToggleTheme]=useContext(ThemeContext)
   return <button className={theme==='light' ?"light-theme":'dark-theme'} onClick={handleToggleTheme} >Switch Theme</button>;
 }
 
