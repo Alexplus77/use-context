@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import {ContextTeam} from "./ContextTeam";
+import {ContextTheme} from "./ContextTheme";
 
 function Main() {
-    const [team, handleToggleTeam]=useContext(ContextTeam)
+    const [theme, handleToggleTheme]=useContext(ContextTheme)
   return (
-    <div className={team==='light' ?"light-theme":'dark-theme'}>
+    <div className={theme==='light' ?"light-theme":'dark-theme'}>
       <h2> Промо Акция</h2>
       <div>Текст промо Акция купи со скидкой</div>
     </div>

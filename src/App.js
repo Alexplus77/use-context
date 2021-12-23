@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {ContextTeam} from "./ContextTeam";
+import {ContextTheme} from "./ContextTheme";
 
 import Header from "./Header";
 import Button from "./Button";
@@ -8,13 +8,13 @@ import Main from "./Main";
 import Promo from "./Promo";
 
 function App() {
-    const [team, setTeam]=useState('light')
-const handleToggleTeam=()=>team === 'light'? setTeam('dark') : setTeam('light')
+    const [theme, setTheme]=useState('light')
+const handleToggleTheme=()=>theme === 'light'? setTheme('dark') : setTheme('light')
 
   return (
 
     <>
-    <ContextTeam.Provider value={[team, handleToggleTeam]}>
+    <ContextTheme.Provider value={[theme, handleToggleTheme]}>
       <div className="content">
 
         <Header />
@@ -24,7 +24,7 @@ const handleToggleTeam=()=>team === 'light'? setTeam('dark') : setTeam('light')
 
       </div>
       <Footer />
-    </ContextTeam.Provider>
+    </ContextTheme.Provider>
 </>
 
 

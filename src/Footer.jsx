@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import {ContextTeam} from "./ContextTeam";
+import {ContextTheme} from "./ContextTheme";
 
 function Footer() {
-    const [team, handleToggleTeam]=useContext(ContextTeam)
+    const [theme, handleToggleTheme]=useContext(ContextTheme)
   return (
-    <footer className={team==='light' ?"light-theme":'dark-theme'}>
+    <footer className={theme==='light' ?"light-theme":'dark-theme'}>
       <h2>
         {" "}
         Footer <br /> Контент футера

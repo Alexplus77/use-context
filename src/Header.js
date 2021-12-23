@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import {ContextTeam} from "./ContextTeam";
+import {ContextTheme} from "./ContextTheme";
 
 function Header() {
-const [team, handleToggleTeam]=useContext(ContextTeam)
+const [theme, handleToggleTheme]=useContext(ContextTheme)
   return (
-    <header className={team==='light' ?"light-theme":'dark-theme'}>
+    <header className={theme==='light' ?"light-theme":'dark-theme'}>
       <h2>Theme</h2>
     </header>
   );
